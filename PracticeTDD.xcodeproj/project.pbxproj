@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,10 @@
 		517F80DF25ADD09B00BE9ECB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F80DE25ADD09B00BE9ECB /* ContentView.swift */; };
 		517F80E125ADD09D00BE9ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517F80E025ADD09D00BE9ECB /* Assets.xcassets */; };
 		517F80E425ADD09D00BE9ECB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517F80E325ADD09D00BE9ECB /* Preview Assets.xcassets */; };
-		517F80EF25ADD09D00BE9ECB /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F80EE25ADD09D00BE9ECB /* LoginViewModelTests.swift */; };
+		517F80EF25ADD09D00BE9ECB /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F80EE25ADD09D00BE9ECB /* LoginViewModelTest.swift */; };
+		517F814525ADDFA600BE9ECB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F814425ADDFA600BE9ECB /* LoginView.swift */; };
+		517F814B25ADE2BA00BE9ECB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F814A25ADE2BA00BE9ECB /* LoginViewModel.swift */; };
+		517F815125ADEB4500BE9ECB /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F815025ADEB4500BE9ECB /* SharedData.swift */; };
 		89407F4694DA0D8838F613F9 /* Pods_PracticeTDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A05B55ED025B7680ED59E04 /* Pods_PracticeTDD.framework */; };
 		B18A16F882431133E2ADC097 /* Pods_PracticeTDDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96557861823544AB5B4711B /* Pods_PracticeTDDTests.framework */; };
 /* End PBXBuildFile section */
@@ -35,8 +38,11 @@
 		517F80E325ADD09D00BE9ECB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		517F80E525ADD09D00BE9ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		517F80EA25ADD09D00BE9ECB /* PracticeTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		517F80EE25ADD09D00BE9ECB /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		517F80EE25ADD09D00BE9ECB /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
 		517F80F025ADD09D00BE9ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517F814425ADDFA600BE9ECB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		517F814A25ADE2BA00BE9ECB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		517F815025ADEB4500BE9ECB /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
 		6A05B55ED025B7680ED59E04 /* Pods_PracticeTDD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeTDD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6FB8E2460FAE8E7A778CFE /* Pods-PracticeTDDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeTDDTests.debug.xcconfig"; path = "Target Support Files/Pods-PracticeTDDTests/Pods-PracticeTDDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C579F0E87E1E8C1A4772D4EF /* Pods-PracticeTDD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeTDD.release.xcconfig"; path = "Target Support Files/Pods-PracticeTDD/Pods-PracticeTDD.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 			children = (
 				517F80DC25ADD09B00BE9ECB /* PracticeTDDApp.swift */,
 				517F80DE25ADD09B00BE9ECB /* ContentView.swift */,
+				517F815425ADEB4D00BE9ECB /* Common */,
+				517F814325ADDF4C00BE9ECB /* Login */,
 				517F80E025ADD09D00BE9ECB /* Assets.xcassets */,
 				517F80E525ADD09D00BE9ECB /* Info.plist */,
 				517F80E225ADD09D00BE9ECB /* Preview Content */,
@@ -107,10 +115,27 @@
 		517F80ED25ADD09D00BE9ECB /* PracticeTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				517F80EE25ADD09D00BE9ECB /* LoginViewModelTests.swift */,
+				517F80EE25ADD09D00BE9ECB /* LoginViewModelTest.swift */,
 				517F80F025ADD09D00BE9ECB /* Info.plist */,
 			);
 			path = PracticeTDDTests;
+			sourceTree = "<group>";
+		};
+		517F814325ADDF4C00BE9ECB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				517F814425ADDFA600BE9ECB /* LoginView.swift */,
+				517F814A25ADE2BA00BE9ECB /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		517F815425ADEB4D00BE9ECB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				517F815025ADEB4500BE9ECB /* SharedData.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		5B104A0C4AE4087C8AE0BEA2 /* Frameworks */ = {
@@ -130,7 +155,6 @@
 				7C6FB8E2460FAE8E7A778CFE /* Pods-PracticeTDDTests.debug.xcconfig */,
 				12B763FE0E06643D1C522E38 /* Pods-PracticeTDDTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -318,7 +342,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517F814B25ADE2BA00BE9ECB /* LoginViewModel.swift in Sources */,
+				517F814525ADDFA600BE9ECB /* LoginView.swift in Sources */,
 				517F80DF25ADD09B00BE9ECB /* ContentView.swift in Sources */,
+				517F815125ADEB4500BE9ECB /* SharedData.swift in Sources */,
 				517F80DD25ADD09B00BE9ECB /* PracticeTDDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,7 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				517F80EF25ADD09D00BE9ECB /* LoginViewModelTests.swift in Sources */,
+				517F80EF25ADD09D00BE9ECB /* LoginViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
