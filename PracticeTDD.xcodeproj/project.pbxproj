@@ -489,6 +489,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E64EB1D5D842BA2111D6F341 /* Pods-PracticeTDD.debug.xcconfig */;
 			buildSettings = {
+				API_BASE_URL = "https://dapi.kakao.com/v2/search/";
+				API_KEY = "KakaoAK c12de4cb2f877c3ae8773020d5ffba9a";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -513,6 +515,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C579F0E87E1E8C1A4772D4EF /* Pods-PracticeTDD.release.xcconfig */;
 			buildSettings = {
+				API_BASE_URL = "https://dapi.kakao.com/v2/search/";
+				API_KEY = "KakaoAK c12de4cb2f877c3ae8773020d5ffba9a";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
