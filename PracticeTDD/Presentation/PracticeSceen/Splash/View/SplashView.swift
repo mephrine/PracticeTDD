@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SplashView: View {
     var body: some View {
       NavigationView {
         List(0..<5) { index in
@@ -26,9 +26,9 @@ struct ContentView: View {
 }
 
 #if DEBUG
-struct ContentView_Previews: PreviewProvider {
+struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+      SplashView()
     }
 }
 #endif
