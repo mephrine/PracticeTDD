@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct PracticeTDDApp: App {
+  var sharedData = SharedData()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          SplashView()
+              .environmentObject(sharedData)
         }
     }
 }
