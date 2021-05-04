@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Game: Equatable, Identifiable {
+struct Users: Equatable, Identifiable {
   typealias Identifier = String
   enum Kind {
     case adventure

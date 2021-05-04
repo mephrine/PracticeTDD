@@ -7,6 +7,6 @@
 
 // For UITests.
 public struct AccessibilityIdentifier {
-    static let loginView = "AccessibilityIdentifierLoginView"
+    static let loginView = "AccessibilityIdentifierSearchUsersView"
     static let loginIdField = "AccessibilityIdentifierLoginId"
 }
