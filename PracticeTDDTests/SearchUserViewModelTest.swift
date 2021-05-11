@@ -7,6 +7,7 @@
 
 import Quick
 import Nimble
+import RxSwift
 @testable import PracticeTDD
 
 class LoginViewModelTest: QuickSpec {
@@ -25,7 +26,7 @@ class LoginViewModelTest: QuickSpec {
       describe("로그인을 하기 위해서 로그인 버튼 클릭 시") {
         context("TextField Validation 확인") {
           it("ID를 입력하지 않음") {
-            
+            Observable('test')
           }
           it("PW를 입력하지 않음") {
             

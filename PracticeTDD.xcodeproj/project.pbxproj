@@ -46,6 +46,7 @@
 		5188C63625C59F9F00B1889B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188C63225C59F9F00B1889B /* Endpoint.swift */; };
 		5188C63725C59F9F00B1889B /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188C63325C59F9F00B1889B /* NetworkConfig.swift */; };
 		5188C63825C59F9F00B1889B /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188C63425C59F9F00B1889B /* DataTransferService.swift */; };
+		88C7B7F0264A3541003827C2 /* GetSearchUsersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C7B7EF264A3541003827C2 /* GetSearchUsersTest.swift */; };
 		89407F4694DA0D8838F613F9 /* Pods_PracticeTDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A05B55ED025B7680ED59E04 /* Pods_PracticeTDD.framework */; };
 		B18A16F882431133E2ADC097 /* Pods_PracticeTDDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96557861823544AB5B4711B /* Pods_PracticeTDDTests.framework */; };
 /* End PBXBuildFile section */
@@ -109,6 +110,7 @@
 		5188C63425C59F9F00B1889B /* DataTransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 		6A05B55ED025B7680ED59E04 /* Pods_PracticeTDD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeTDD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6FB8E2460FAE8E7A778CFE /* Pods-PracticeTDDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeTDDTests.debug.xcconfig"; path = "Target Support Files/Pods-PracticeTDDTests/Pods-PracticeTDDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88C7B7EF264A3541003827C2 /* GetSearchUsersTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSearchUsersTest.swift; sourceTree = "<group>"; };
 		C579F0E87E1E8C1A4772D4EF /* Pods-PracticeTDD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeTDD.release.xcconfig"; path = "Target Support Files/Pods-PracticeTDD/Pods-PracticeTDD.release.xcconfig"; sourceTree = "<group>"; };
 		D96557861823544AB5B4711B /* Pods_PracticeTDDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeTDDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64EB1D5D842BA2111D6F341 /* Pods-PracticeTDD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeTDD.debug.xcconfig"; path = "Target Support Files/Pods-PracticeTDD/Pods-PracticeTDD.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			children = (
 				517F80EE25ADD09D00BE9ECB /* SearchUserViewModelTest.swift */,
 				517F80F025ADD09D00BE9ECB /* Info.plist */,
+				88C7B7EF264A3541003827C2 /* GetSearchUsersTest.swift */,
 			);
 			path = PracticeTDDTests;
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				517F80EF25ADD09D00BE9ECB /* SearchUserViewModelTest.swift in Sources */,
+				88C7B7F0264A3541003827C2 /* GetSearchUsersTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

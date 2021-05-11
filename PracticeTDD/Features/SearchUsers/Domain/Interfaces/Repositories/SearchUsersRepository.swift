@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol GameImagesRepository {
-    func fetchImage(with imagePath: String, width: Int, completion: @escaping (Result<Data, Error>) -> Void) -> Cancellable?
+protocol SearchUsersRepository {
+    func getSearchUsers(with imagePath: String, width: Int, completion: @escaping (Result<Data, Error>) -> Void) -> Cancellable?
 }

@@ -6,6 +6,8 @@ target 'PracticeTDD' do
 
   #DI
   pod 'Pure'
+  #or
+  #pod 'Swinject'
 
   #Lint
   pod 'SwiftLint'
@@ -20,5 +22,6 @@ target 'PracticeTDD' do
     inherit! :search_paths
     pod 'Quick'
     pod 'Nimble'
+    pod 'Stubbder'
   end  
 end
